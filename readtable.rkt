@@ -2,9 +2,9 @@
 
 ;(with-input-from-string "[a, b, c, d]" read)
 
-(provide make-csv-readtable)
+(provide make-spacecomma-readtable)
 
-(define (make-csv-readtable)
+(define (make-spacecomma-readtable)
   (define previous-readtable (current-readtable))
    (make-readtable
   previous-readtable
