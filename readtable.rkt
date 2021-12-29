@@ -7,7 +7,7 @@
 (define (make-csv-readtable)
   (define previous-readtable (current-readtable))
    (make-readtable
-  #f
+  previous-readtable
   #\~ #\, #f
   #\, #\space #f))
 
